@@ -41,7 +41,7 @@ class TwitterScraper():
             sys.exit()
 
         self.is_alive = True
-        r = self.api.request('statuses/sample')
+        r = api.request('statuses/sample')
         for tweet in r:
             try: 
                 if 'text' in tweet:
